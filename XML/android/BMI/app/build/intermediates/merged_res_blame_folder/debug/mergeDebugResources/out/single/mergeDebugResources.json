@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_height.png.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/height.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_weight.png.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/weight.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/navigation_my_nav.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/navigation/my_nav.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/layout_fragment_main.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/layout_fragment_result.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/layout/fragment_result.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/xml_backup_rules.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/layout_activity_splash.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/raw_eye.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/raw/eye.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/layout_activity_main.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.bmi.app-debug-51:/layout_fragment_main.xml.flat",
+        "source": "com.example.bmi.app-main-53:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_bmi_image.jpeg.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/bmi_image.jpeg"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/raw_bouncing_heart.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/raw/bouncing_heart.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/raw_girl_running_on_treadmill.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/raw/girl_running_on_treadmill.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/raw_man_lifting_barbell.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/raw/man_lifting_barbell.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/layout_fragment_check_your_health.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/layout/fragment_check_your_health.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_underweight.png.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/underweight.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/raw_gameover.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/raw/gameover.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/drawable_background_splash.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/drawable/background_splash.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-debug-51:/raw_online_health_report.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.bmi.app-main-53:/raw/online_health_report.json"
+    }
+]

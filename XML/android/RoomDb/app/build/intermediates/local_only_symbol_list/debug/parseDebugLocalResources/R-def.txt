@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id action_dataAdd_to_dataDelete
+id action_dataDelete_to_dataAdd
+id buttonDelete
+id buttonGo
+id button_back
+id dataAdd
+id dataDelete
+id editTextName
+id editTextOccupation
+id editTextPhone
+id editTextTextEmail
+id editTextTextMultiLine
+id fragmentContainerView
+id main
+id my_nav
+id textView
+layout activity_main
+layout fragment_data_add
+layout fragment_data_delete
+mipmap ic_launcher
+mipmap ic_launcher_round
+navigation my_nav
+string app_name
+string hello_blank_fragment
+style Base.Theme.RoomDb
+style Theme.RoomDb
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/layout_activity_main.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/layout_fragment_web_view.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/layout/fragment_web_view.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/layout_fragment_listingscreen.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/layout/fragment_listingscreen.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/drawable_background_splash.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/drawable/background_splash.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/xml_backup_rules.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/raw_globe.json.flat",
+        "source": "com.example.newsweather.app-main-58:/raw/globe.json"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/navigation_my_nav.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/navigation/my_nav.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/raw_eye.json.flat",
+        "source": "com.example.newsweather.app-main-58:/raw/eye.json"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/layout_item_layout.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/layout/item_layout.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/layout_activity_splash_screen.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/layout_category.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/layout/category.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/raw_globedemo.json.flat",
+        "source": "com.example.newsweather.app-main-58:/raw/globedemo.json"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.newsweather.app-main-58:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-debug-56:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.newsweather.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    }
+]

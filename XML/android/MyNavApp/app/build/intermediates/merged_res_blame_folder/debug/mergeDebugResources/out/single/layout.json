@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-mergeDebugResources-49:/layout/fragment_game_screen.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-main-52:/layout/fragment_game_screen.xml"
+    },
+    {
+        "merged": "com.example.mynavapp-mergeDebugResources-49:/layout/fragment_game_screen.xml",
+        "source": "com.example.mynavapp-main-52:/layout/fragment_game_screen.xml"
+    },
+    {
+        "merged": "com.example.mynavapp-mergeDebugResources-49:/layout/fragment_start_screen.xml",
+        "source": "com.example.mynavapp-main-52:/layout/fragment_start_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-mergeDebugResources-49:/layout/fragment_start_screen.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-main-52:/layout/fragment_start_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-mergeDebugResources-49:/layout/fragment_result.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.4/com.example.mynavapp-main-52:/layout/fragment_result.xml"
+    },
+    {
+        "merged": "com.example.mynavapp-mergeDebugResources-49:/layout/fragment_result.xml",
+        "source": "com.example.mynavapp-main-52:/layout/fragment_result.xml"
+    }
+]

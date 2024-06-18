@@ -1,0 +1,6 @@
+com.example.mynavapp.test.app-annotation-experimental-1.4.0-0 /Users/selvaganesh/.gradle/caches/transforms-3/07465a5665b2983955e05ff3a74d0cfb/transformed/annotation-experimental-1.4.0/res
+com.example.mynavapp.test.app-core-1.5.0-1 /Users/selvaganesh/.gradle/caches/transforms-3/e50bb3dce3aed7d970adcfdd53978dd2/transformed/core-1.5.0/res
+com.example.mynavapp.test.app-androidTest-2 /Users/selvaganesh/Downloads/zoho/android/MyNavApp/app/build/generated/res/resValues/androidTest/debug
+com.example.mynavapp.test.app-mergeDebugAndroidTestResources-3 /Users/selvaganesh/Downloads/zoho/android/MyNavApp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.mynavapp.test.app-mergeDebugAndroidTestResources-4 /Users/selvaganesh/Downloads/zoho/android/MyNavApp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.mynavapp.test.app-debugAndroidTest-5 /Users/selvaganesh/Downloads/zoho/android/MyNavApp/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

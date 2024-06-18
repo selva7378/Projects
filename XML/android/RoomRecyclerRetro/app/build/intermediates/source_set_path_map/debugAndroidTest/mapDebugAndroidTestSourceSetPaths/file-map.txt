@@ -1,0 +1,6 @@
+com.example.roomrecyclerretro.test.app-annotation-experimental-1.4.0-0 /Users/selvaganesh/.gradle/caches/transforms-3/4a285b5c20544ee7d89596bf218df822/transformed/annotation-experimental-1.4.0/res
+com.example.roomrecyclerretro.test.app-core-1.5.0-1 /Users/selvaganesh/.gradle/caches/transforms-3/91b7a46fc46851877a92e612df0f0365/transformed/core-1.5.0/res
+com.example.roomrecyclerretro.test.app-androidTest-2 /Users/selvaganesh/Downloads/zoho/android/RoomRecyclerRetro/app/build/generated/res/resValues/androidTest/debug
+com.example.roomrecyclerretro.test.app-mergeDebugAndroidTestResources-3 /Users/selvaganesh/Downloads/zoho/android/RoomRecyclerRetro/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.roomrecyclerretro.test.app-mergeDebugAndroidTestResources-4 /Users/selvaganesh/Downloads/zoho/android/RoomRecyclerRetro/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.roomrecyclerretro.test.app-debugAndroidTest-5 /Users/selvaganesh/Downloads/zoho/android/RoomRecyclerRetro/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

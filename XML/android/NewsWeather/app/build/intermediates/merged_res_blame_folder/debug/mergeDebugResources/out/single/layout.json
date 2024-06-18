@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.newsweather.app-mergeDebugResources-55:/layout/fragment_web_view.xml",
+        "source": "com.example.newsweather.app-main-58:/layout/fragment_web_view.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "com.example.newsweather.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-mergeDebugResources-55:/layout/activity_splash_screen.xml",
+        "source": "com.example.newsweather.app-main-58:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.newsweather.app-mergeDebugResources-55:/layout/fragment_listingscreen.xml",
+        "source": "com.example.newsweather.app-main-58:/layout/fragment_listingscreen.xml"
+    }
+]

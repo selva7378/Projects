@@ -1,0 +1,196 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.news"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:8:5-81
+14-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:8:22-78
+15
+16    <permission
+16-->[androidx.core:core:1.13.0] /Users/selvaganesh/.gradle/caches/transforms-4/8a8323dab371817a5cea984d1c111752/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.news.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.0] /Users/selvaganesh/.gradle/caches/transforms-4/8a8323dab371817a5cea984d1c111752/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.0] /Users/selvaganesh/.gradle/caches/transforms-4/8a8323dab371817a5cea984d1c111752/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.news.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.0] /Users/selvaganesh/.gradle/caches/transforms-4/8a8323dab371817a5cea984d1c111752/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.0] /Users/selvaganesh/.gradle/caches/transforms-4/8a8323dab371817a5cea984d1c111752/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:10:5-32:19
+23        android:allowBackup="true"
+23-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:11:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.13.0] /Users/selvaganesh/.gradle/caches/transforms-4/8a8323dab371817a5cea984d1c111752/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:12:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:13:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:14:9-43
+30        android:label="@string/app_name"
+30-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:15:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:16:9-54
+32        android:supportsRtl="true"
+32-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:17:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.News" >
+34-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:18:9-42
+35        <activity
+35-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:20:9-22:40
+36            android:name="com.example.news.MainActivity"
+36-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:21:13-41
+37            android:exported="false" />
+37-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:22:13-37
+38        <activity
+38-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:23:9-31:20
+39            android:name="com.example.news.screens.splash.SplashScreen"
+39-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:24:13-56
+40            android:exported="true" >
+40-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:25:13-36
+41            <intent-filter>
+41-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:26:13-30:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:27:17-69
+42-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:27:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:29:17-77
+44-->/Users/selvaganesh/Downloads/zoho/projects/android/News/app/src/main/AndroidManifest.xml:29:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <service
+48-->[androidx.room:room-runtime:2.6.1] /Users/selvaganesh/.gradle/caches/transforms-4/39190afa094f897b58d59ec9a42a818e/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+49            android:name="androidx.room.MultiInstanceInvalidationService"
+49-->[androidx.room:room-runtime:2.6.1] /Users/selvaganesh/.gradle/caches/transforms-4/39190afa094f897b58d59ec9a42a818e/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+50            android:directBootAware="true"
+50-->[androidx.room:room-runtime:2.6.1] /Users/selvaganesh/.gradle/caches/transforms-4/39190afa094f897b58d59ec9a42a818e/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+51            android:exported="false" />
+51-->[androidx.room:room-runtime:2.6.1] /Users/selvaganesh/.gradle/caches/transforms-4/39190afa094f897b58d59ec9a42a818e/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+52
+53        <activity
+53-->[com.google.android.gms:play-services-base:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/d34167e3a70e103a67f01940de54c236/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+54            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+54-->[com.google.android.gms:play-services-base:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/d34167e3a70e103a67f01940de54c236/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+55            android:exported="false"
+55-->[com.google.android.gms:play-services-base:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/d34167e3a70e103a67f01940de54c236/transformed/play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+56            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+56-->[com.google.android.gms:play-services-base:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/d34167e3a70e103a67f01940de54c236/transformed/play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+57
+58        <meta-data
+58-->[com.google.android.gms:play-services-basement:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/5a14cd85c14cc5b424d73ed49e598a72/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+59            android:name="com.google.android.gms.version"
+59-->[com.google.android.gms:play-services-basement:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/5a14cd85c14cc5b424d73ed49e598a72/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+60            android:value="@integer/google_play_services_version" />
+60-->[com.google.android.gms:play-services-basement:18.3.0] /Users/selvaganesh/.gradle/caches/transforms-4/5a14cd85c14cc5b424d73ed49e598a72/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+61
+62        <provider
+62-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+63            android:name="androidx.startup.InitializationProvider"
+63-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+64            android:authorities="com.example.news.androidx-startup"
+64-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+65            android:exported="false" >
+65-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+66            <meta-data
+66-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+67-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+68                android:value="androidx.startup" />
+68-->[androidx.emoji2:emoji2:1.2.0] /Users/selvaganesh/.gradle/caches/transforms-4/3ae4cd65c0a3b8ae8fcd4daf51b71a5a/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/selvaganesh/.gradle/caches/transforms-4/5cba2f529e645ad92be212d70163de83/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/selvaganesh/.gradle/caches/transforms-4/5cba2f529e645ad92be212d70163de83/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+71                android:value="androidx.startup" />
+71-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/selvaganesh/.gradle/caches/transforms-4/5cba2f529e645ad92be212d70163de83/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+74                android:value="androidx.startup" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+75        </provider>
+76
+77        <uses-library
+77-->[androidx.window:window:1.0.0] /Users/selvaganesh/.gradle/caches/transforms-4/2d6d145a8dd3a61d7d95e7d4bfae3636/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+78            android:name="androidx.window.extensions"
+78-->[androidx.window:window:1.0.0] /Users/selvaganesh/.gradle/caches/transforms-4/2d6d145a8dd3a61d7d95e7d4bfae3636/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0] /Users/selvaganesh/.gradle/caches/transforms-4/2d6d145a8dd3a61d7d95e7d4bfae3636/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+80        <uses-library
+80-->[androidx.window:window:1.0.0] /Users/selvaganesh/.gradle/caches/transforms-4/2d6d145a8dd3a61d7d95e7d4bfae3636/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+81            android:name="androidx.window.sidecar"
+81-->[androidx.window:window:1.0.0] /Users/selvaganesh/.gradle/caches/transforms-4/2d6d145a8dd3a61d7d95e7d4bfae3636/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0] /Users/selvaganesh/.gradle/caches/transforms-4/2d6d145a8dd3a61d7d95e7d4bfae3636/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+83
+84        <provider
+84-->[com.squareup.picasso:picasso:2.8] /Users/selvaganesh/.gradle/caches/transforms-4/318d61ec21f1acf1edeec51bbc5d670b/transformed/picasso-2.8/AndroidManifest.xml:8:9-11:40
+85            android:name="com.squareup.picasso.PicassoProvider"
+85-->[com.squareup.picasso:picasso:2.8] /Users/selvaganesh/.gradle/caches/transforms-4/318d61ec21f1acf1edeec51bbc5d670b/transformed/picasso-2.8/AndroidManifest.xml:9:13-64
+86            android:authorities="com.example.news.com.squareup.picasso"
+86-->[com.squareup.picasso:picasso:2.8] /Users/selvaganesh/.gradle/caches/transforms-4/318d61ec21f1acf1edeec51bbc5d670b/transformed/picasso-2.8/AndroidManifest.xml:10:13-72
+87            android:exported="false" />
+87-->[com.squareup.picasso:picasso:2.8] /Users/selvaganesh/.gradle/caches/transforms-4/318d61ec21f1acf1edeec51bbc5d670b/transformed/picasso-2.8/AndroidManifest.xml:11:13-37
+88
+89        <receiver
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+90            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+91            android:directBootAware="false"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+92            android:enabled="true"
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+93            android:exported="true"
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+94            android:permission="android.permission.DUMP" >
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+96                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+99                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+102                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+105                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/selvaganesh/.gradle/caches/transforms-4/b7a4b191c10e9d027d1a1d057752e75c/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+106            </intent-filter>
+107        </receiver>
+108    </application>
+109
+110</manifest>

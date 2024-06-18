@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/Users/selvaganesh/Downloads/zoho/projects/android/CppApp/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/selvaganesh/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/selvaganesh/Downloads/zoho/projects/android/CppApp/app/.cxx/Debug/1n6u5i4g/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/selvaganesh/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/selvaganesh/Downloads/zoho/projects/android/CppApp/app/.cxx/Debug/1n6u5i4g/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "cppapp::@6890427a1f51a3e7e1df": {
+      "artifactName": "cppapp",
+      "abi": "x86",
+      "output": "/Users/selvaganesh/Downloads/zoho/projects/android/CppApp/app/build/intermediates/cxx/Debug/1n6u5i4g/obj/x86/libcppapp.so",
+      "runtimeFiles": []
+    }
+  }
+}

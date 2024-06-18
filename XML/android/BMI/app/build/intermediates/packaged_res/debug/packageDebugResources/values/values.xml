@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#3023ae</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="purple">#c86dd7</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">BMI</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        
+        <item name="colorPrimary">#c8b6ff</item>
+        
+    </style>
+    <style name="Base.Theme.BMI" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="LightWithoutAppBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+    <style name="Theme.BMI" parent="Base.Theme.BMI"/>
+</resources>

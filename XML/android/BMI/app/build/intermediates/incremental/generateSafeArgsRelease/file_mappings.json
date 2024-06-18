@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/my_nav.xml","javaFiles":["com.example.bmi.screens.main.mainDirections","com.example.bmi.screens.result.resultDirections","com.example.bmi.screens.result.resultArgs","com.example.bmi.screens.home.fragmentCheckYourHealthDirections"]}]

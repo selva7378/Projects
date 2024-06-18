@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/my_nav.xml","javaFiles":["com.example.mynavapp.screens.start.start_screenDirections","com.example.mynavapp.screens.game.game_screenDirections","com.example.mynavapp.screens.result.resultDirections","com.example.mynavapp.screens.result.resultArgs"]}]

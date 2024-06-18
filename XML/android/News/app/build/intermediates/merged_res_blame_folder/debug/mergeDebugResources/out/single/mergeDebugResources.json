@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/raw_globe.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/raw/globe.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/navigation_my_nav.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/navigation/my_nav.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/drawable_freezing.png.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/drawable/freezing.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/layout_activity_main.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/drawable_warm.png.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/drawable/warm.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/layout_category.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/category.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.news.app-debug-58:/drawable_hot.png.flat",
+        "source": "com.example.news.app-main-60:/drawable/hot.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/layout_fragment_web_view_screen.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/fragment_web_view_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/layout_activity_splash_screen.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/layout_item_layout.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/item_layout.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-pngs-54:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/drawable_network.png.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/drawable/network.png"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/raw_globedemo.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/raw/globedemo.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/raw_eye.json.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/raw/eye.json"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/layout_fragment_news_listing_screen.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/fragment_news_listing_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/xml_backup_rules.xml.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-debug-58:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/mipmap-hdpi/ic_launcher_round.webp"
+    }
+]

@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string column_compose
+string column_compose_description
+string image_compose
+string image_compose_description
+string row_compose
+string row_compose_description
+string text_compose
+string text_compose_description
+style Theme.ComposeQuadrant
+xml backup_rules
+xml data_extraction_rules

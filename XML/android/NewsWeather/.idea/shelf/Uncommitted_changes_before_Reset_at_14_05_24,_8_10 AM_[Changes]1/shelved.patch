@@ -1,0 +1,423 @@
+Index: app/src/main/java/com/example/newsweather/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather\n\nimport android.os.Bundle\nimport androidx.activity.enableEdgeToEdge\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport androidx.databinding.DataBindingUtil\nimport androidx.lifecycle.ViewModelProvider\nimport androidx.recyclerview.widget.RecyclerView\nimport com.example.newsweather.database.roomdb.NewsDatabase\nimport com.example.newsweather.databinding.ActivityMainBinding\nimport com.example.newsweather.viewmodels.NewsViewModel\nimport com.example.newsweather.viewmodels.NewsViewModelFactory\n\nclass MainActivity : AppCompatActivity() {\n\n\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        enableEdgeToEdge()\n//        setContentView(R.layout.activity_main)\n        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)\n    }\n\n    override fun onDestroy() {\n        super.onDestroy()\n\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/MainActivity.kt b/app/src/main/java/com/example/newsweather/MainActivity.kt
+--- a/app/src/main/java/com/example/newsweather/MainActivity.kt	
++++ b/app/src/main/java/com/example/newsweather/MainActivity.kt	
+@@ -3,15 +3,8 @@
+ import android.os.Bundle
+ import androidx.activity.enableEdgeToEdge
+ import androidx.appcompat.app.AppCompatActivity
+-import androidx.core.view.ViewCompat
+-import androidx.core.view.WindowInsetsCompat
+ import androidx.databinding.DataBindingUtil
+-import androidx.lifecycle.ViewModelProvider
+-import androidx.recyclerview.widget.RecyclerView
+-import com.example.newsweather.database.roomdb.NewsDatabase
+ import com.example.newsweather.databinding.ActivityMainBinding
+-import com.example.newsweather.viewmodels.NewsViewModel
+-import com.example.newsweather.viewmodels.NewsViewModelFactory
+ 
+ class MainActivity : AppCompatActivity() {
+ 
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\n    alias(libs.plugins.androidApplication)\n    alias(libs.plugins.jetbrainsKotlinAndroid)\n    kotlin(\"kapt\")\n    id(\"androidx.navigation.safeargs.kotlin\")\n}\n\nandroid {\n    namespace = \"com.example.newsweather\"\n    compileSdk = 34\n\n    defaultConfig {\n        applicationId = \"com.example.newsweather\"\n        minSdk = 23\n        targetSdk = 34\n        versionCode = 1\n        versionName = \"1.0\"\n\n        testInstrumentationRunner = \"androidx.test.runner.AndroidJUnitRunner\"\n    }\n\n    buildTypes {\n        release {\n            isMinifyEnabled = false\n            proguardFiles(\n                getDefaultProguardFile(\"proguard-android-optimize.txt\"),\n                \"proguard-rules.pro\"\n            )\n        }\n    }\n    compileOptions {\n        sourceCompatibility = JavaVersion.VERSION_1_8\n        targetCompatibility = JavaVersion.VERSION_1_8\n    }\n    kotlinOptions {\n        jvmTarget = \"1.8\"\n    }\n    buildFeatures{\n        dataBinding = true\n    }\n}\n\ndependencies {\n\n    implementation(libs.androidx.core.ktx)\n    implementation(libs.androidx.appcompat)\n    implementation(libs.material)\n    implementation(libs.androidx.activity)\n    implementation(libs.androidx.constraintlayout)\n    implementation(libs.androidx.navigation.fragment.ktx)\n    implementation(libs.androidx.navigation.ui.ktx)\n    testImplementation(libs.junit)\n    androidTestImplementation(libs.androidx.junit)\n    androidTestImplementation(libs.androidx.espresso.core)\n    implementation(\"com.airbnb.android:lottie:3.0.7\")\n\n    //room\n    val room_version = \"2.6.1\"\n\n    implementation(\"androidx.room:room-runtime:$room_version\")\n    annotationProcessor(\"androidx.room:room-compiler:$room_version\")\n\n    // optional - Kotlin Extensions and Coroutines support for Room\n    implementation(\"androidx.room:room-ktx:$room_version\")\n\n    // To use Kotlin annotation processing tool (kapt)\n    kapt(\"androidx.room:room-compiler:$room_version\")\n    implementation(\"androidx.room:room-ktx:$room_version\")\n\n    //RETROFIT\n    implementation(\"com.squareup.retrofit2:retrofit:2.11.0\")\n    implementation(\"com.squareup.retrofit2:converter-gson:2.1.0\")\n\n    //glide\n    implementation(\"com.github.bumptech.glide:glide:4.12.0\")\n    annotationProcessor(\"com.github.bumptech.glide:compiler:4.12.0\")\n\n    //picasso\n    implementation(\"com.squareup.picasso:picasso:2.8\")\n\n    //material3\n    implementation(\"com.google.android.material:material:1.12.0\")\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts	
++++ b/app/build.gradle.kts	
+@@ -49,6 +49,7 @@
+     implementation(libs.androidx.constraintlayout)
+     implementation(libs.androidx.navigation.fragment.ktx)
+     implementation(libs.androidx.navigation.ui.ktx)
++    implementation(libs.play.services.location)
+     testImplementation(libs.junit)
+     androidTestImplementation(libs.androidx.junit)
+     androidTestImplementation(libs.androidx.espresso.core)
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"deploymentTargetSelector\">\n    <selectionStates>\n      <SelectionState runConfigName=\"app\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n    </selectionStates>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+--- a/.idea/deploymentTargetSelector.xml	
++++ b/.idea/deploymentTargetSelector.xml	
+@@ -4,6 +4,14 @@
+     <selectionStates>
+       <SelectionState runConfigName="app">
+         <option name="selectionMode" value="DROPDOWN" />
++        <DropdownSelection timestamp="2024-05-13T18:44:03.700069Z">
++          <Target type="DEFAULT_BOOT">
++            <handle>
++              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/selvaganesh/.android/avd/Pixel_6a_API_34.avd" />
++            </handle>
++          </Target>
++        </DropdownSelection>
++        <DialogSelection />
+       </SelectionState>
+     </selectionStates>
+   </component>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\">\n\n    <uses-permission android:name=\"android.permission.INTERNET\" />\n\n    <application\n        android:allowBackup=\"true\"\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\n        android:fullBackupContent=\"@xml/backup_rules\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/AppTheme\"\n        tools:targetApi=\"31\">\n        <activity\n            android:name=\".MainActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".SplashScreen\"\n            android:exported=\"true\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n    </application>\n\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	
++++ b/app/src/main/AndroidManifest.xml	
+@@ -3,6 +3,8 @@
+     xmlns:tools="http://schemas.android.com/tools">
+ 
+     <uses-permission android:name="android.permission.INTERNET" />
++    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
++    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+ 
+     <application
+         android:allowBackup="true"
+Index: app/src/main/java/com/example/newsweather/recycler/AdapterClass.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.recycler\n\nimport android.util.Log\nimport android.view.LayoutInflater\nimport android.view.View\nimport android.view.ViewGroup\nimport android.widget.ImageView\nimport android.widget.TextView\nimport androidx.recyclerview.widget.RecyclerView\nimport com.bumptech.glide.Glide\nimport com.example.newsweather.R\nimport com.example.newsweather.screens.ListingscreenDirections\nimport com.example.newsweather.viewmodels.NewsViewModel\n\n\nclass AdapterClass(private val dataList: List<String>,\n                   private val newsViewModel: NewsViewModel)\n    : RecyclerView.Adapter<AdapterClass.ViewHolderClass>() {\n\n\n    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {\n        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.category, parent, false)\n        return ViewHolderClass(itemView)\n    }\n\n\n\n    override fun getItemCount(): Int {\n        return dataList.size\n    }\n\n    override fun onBindViewHolder(holder: ViewHolderClass, position: Int) {\n        val currentItem = dataList[position]\n\n        holder.rvTitle.text = currentItem\n\n        // Set click listener\n        holder.itemView.setOnClickListener {\n            Log.i(\"categor adapter\", \"on click is pressed\")\n            newsViewModel.category = currentItem\n            newsViewModel.currentPage = 0\n            newsViewModel.searchFlag = false\n            newsViewModel.dbRetrieveCategory(currentItem, \"category\")\n        }\n    }\n\n    class ViewHolderClass(itemView: View): RecyclerView.ViewHolder(itemView) {\n        val rvTitle: TextView = itemView.findViewById(R.id.textView_titleCategory)\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/recycler/AdapterClass.kt b/app/src/main/java/com/example/newsweather/recycler/AdapterClass.kt
+--- a/app/src/main/java/com/example/newsweather/recycler/AdapterClass.kt	
++++ b/app/src/main/java/com/example/newsweather/recycler/AdapterClass.kt	
+@@ -4,17 +4,15 @@
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
+-import android.widget.ImageView
+ import android.widget.TextView
+ import androidx.recyclerview.widget.RecyclerView
+-import com.bumptech.glide.Glide
+ import com.example.newsweather.R
+-import com.example.newsweather.screens.ListingscreenDirections
+-import com.example.newsweather.viewmodels.NewsViewModel
++import com.example.newsweather.viewmodels.newsviewmodel.NewsViewModel
+ 
+ 
+ class AdapterClass(private val dataList: List<String>,
+-                   private val newsViewModel: NewsViewModel)
++                   private val newsViewModel: NewsViewModel
++)
+     : RecyclerView.Adapter<AdapterClass.ViewHolderClass>() {
+ 
+ 
+Index: gradle/libs.versions.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[versions]\nagp = \"8.4.0\"\nkotlin = \"1.9.0\"\ncoreKtx = \"1.13.1\"\njunit = \"4.13.2\"\njunitVersion = \"1.1.5\"\nespressoCore = \"3.5.1\"\nappcompat = \"1.6.1\"\nmaterial = \"1.12.0\"\nactivity = \"1.8.0\"\nconstraintlayout = \"2.1.4\"\nnavigationFragmentKtx = \"2.7.7\"\nnavigationUiKtx = \"2.7.7\"\n\n[libraries]\nandroidx-core-ktx = { group = \"androidx.core\", name = \"core-ktx\", version.ref = \"coreKtx\" }\njunit = { group = \"junit\", name = \"junit\", version.ref = \"junit\" }\nandroidx-junit = { group = \"androidx.test.ext\", name = \"junit\", version.ref = \"junitVersion\" }\nandroidx-espresso-core = { group = \"androidx.test.espresso\", name = \"espresso-core\", version.ref = \"espressoCore\" }\nandroidx-appcompat = { group = \"androidx.appcompat\", name = \"appcompat\", version.ref = \"appcompat\" }\nmaterial = { group = \"com.google.android.material\", name = \"material\", version.ref = \"material\" }\nandroidx-activity = { group = \"androidx.activity\", name = \"activity\", version.ref = \"activity\" }\nandroidx-constraintlayout = { group = \"androidx.constraintlayout\", name = \"constraintlayout\", version.ref = \"constraintlayout\" }\nandroidx-navigation-fragment-ktx = { group = \"androidx.navigation\", name = \"navigation-fragment-ktx\", version.ref = \"navigationFragmentKtx\" }\nandroidx-navigation-ui-ktx = { group = \"androidx.navigation\", name = \"navigation-ui-ktx\", version.ref = \"navigationUiKtx\" }\n\n[plugins]\nandroidApplication = { id = \"com.android.application\", version.ref = \"agp\" }\njetbrainsKotlinAndroid = { id = \"org.jetbrains.kotlin.android\", version.ref = \"kotlin\" }\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradle/libs.versions.toml b/gradle/libs.versions.toml
+--- a/gradle/libs.versions.toml	
++++ b/gradle/libs.versions.toml	
+@@ -11,6 +11,7 @@
+ constraintlayout = "2.1.4"
+ navigationFragmentKtx = "2.7.7"
+ navigationUiKtx = "2.7.7"
++playServicesLocation = "21.2.0"
+ 
+ [libraries]
+ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+@@ -23,6 +24,7 @@
+ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
++play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+ 
+ [plugins]
+ androidApplication = { id = "com.android.application", version.ref = "agp" }
+Index: app/src/main/java/com/example/newsweather/Listingscreen.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.screens\n\nimport android.os.Bundle\nimport android.util.Log\nimport android.view.LayoutInflater\nimport android.view.View\nimport android.view.ViewGroup\nimport android.widget.SearchView\nimport androidx.databinding.DataBindingUtil\nimport androidx.fragment.app.Fragment\nimport androidx.lifecycle.ViewModelProvider\nimport androidx.navigation.fragment.findNavController\nimport androidx.recyclerview.widget.LinearLayoutManager\nimport androidx.recyclerview.widget.RecyclerView\nimport com.example.newsweather.R\nimport com.example.newsweather.database.roomdb.NewsDatabase\nimport com.example.newsweather.databinding.FragmentListingscreenBinding\nimport com.example.newsweather.recycler.AdapterClass\nimport com.example.newsweather.recycler.NewsListingAdapterClass\nimport com.example.newsweather.viewmodels.NewsViewModel\nimport com.example.newsweather.viewmodels.NewsViewModelFactory\n\nclass Listingscreen : Fragment() {\n    private lateinit var listingRecyclerView: RecyclerView\n    private lateinit var categoryRecyclerView: RecyclerView\n    private lateinit var newsListingAdapter: NewsListingAdapterClass\n\n    init {\n\n    }\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        arguments?.let {\n        }\n    }\n\n    override fun onCreateView(\n        inflater: LayoutInflater, container: ViewGroup?,\n        savedInstanceState: Bundle?\n    ): View? {\n        // Inflate the layout for this fragment\n        val binding: FragmentListingscreenBinding = DataBindingUtil.inflate(\n            inflater, R.layout.fragment_listingscreen, container, false\n        )\n\n        val application = requireNotNull(this.activity).application\n        val dataSource = NewsDatabase.getInstance(application).newsDatabaseDao\n\n        val newsViewModelFactory = NewsViewModelFactory(dataSource, application)\n\n        val newsViewModel = ViewModelProvider(this, newsViewModelFactory)\n            .get(NewsViewModel::class.java)\n\n        newsViewModel.getMyData()\n        newsViewModel.dbRetrieve()\n\n\n\n\n\n\n        listingRecyclerView = binding.recyclerView\n        listingRecyclerView.layoutManager = LinearLayoutManager(this.requireContext())\n        listingRecyclerView.setHasFixedSize(true)\n\n        categoryRecyclerView = binding.recyclerViewCategory\n        categoryRecyclerView.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL, false)\n        categoryRecyclerView.setHasFixedSize(true)\n\n        val immutableList = listOf(\"all\", \"national\", \"business\",\n            \"sports\", \"world\",\n            \"politics\", \"technology\", \"startup\", \"entertainment\",\n            \"miscellaneous\", \"hatke\", \"science\", \"automobile\")\n        categoryRecyclerView.adapter = AdapterClass(immutableList,  newsViewModel)\n        val navController = findNavController()\n        newsListingAdapter = NewsListingAdapterClass(navController)\n        listingRecyclerView.adapter = newsListingAdapter\n\n\n\n        Log.e(\"listingscreen\", newsViewModel.allDataListFromRoom.toString())\n        newsViewModel.allDataListFromRoom.observe(viewLifecycleOwner) { dataList ->\n            // Update the RecyclerView adapter with the new data list\n            newsListingAdapter.addData(dataList)\n            Log.i(\"listing screen live data size\", newsViewModel.allDataListFromRoom.value?.size.toString())\n        }\n        newsViewModel._categoryDataListFromRoom.observe(viewLifecycleOwner){dataList ->\n            newsListingAdapter.clearData()\n            newsListingAdapter.addData(dataList)\n        }\n\n        listingRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {\n            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {\n                super.onScrolled(recyclerView, dx, dy)\n                val layoutManager = recyclerView.layoutManager as LinearLayoutManager\n                val visibleItemCount = layoutManager.childCount\n                val totalItemCount = layoutManager.itemCount\n                val firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition()\n\n                if (visibleItemCount + firstVisibleItemPosition >= totalItemCount && firstVisibleItemPosition >= 0) {\n                    if(newsViewModel.category == \"all\"){\n                        Log.i(\"Listingscreen\", \"all scrolling\")\n                        newsViewModel.dbRetrieve()\n                    }else if(newsViewModel.searchFlag == true){\n                        Log.i(\"Listingscreen\", \"search scrolling\")\n                        newsViewModel.dbRetrieveBySearch(newsViewModel.category, \"scrollview\")\n                    }else{\n                        Log.i(\"Listingscreen\", \"category scrolling\")\n                        newsViewModel.dbRetrieveCategory(newsViewModel.category, \"allData\")\n                    }\n\n                }\n            }\n        })\n\n        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {\n            override fun onQueryTextSubmit(query: String?): Boolean {\n                // Perform search when user submits query (e.g., press search button)\n                newsViewModel.dbRetrieveBySearch(query, \"searchview\")\n                newsViewModel.category = query!!\n                newsViewModel.searchFlag = true\n                return true\n            }\n\n            override fun onQueryTextChange(newText: String?): Boolean {\n                // Perform search as user types (optional)\n//                performSearch(newText)\n                return true\n            }\n        })\n//        recyclerView.adapter = AdapterClass(newsViewModel.dataListFromRoom)\n\n\n        return binding.root\n    }\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/Listingscreen.kt b/app/src/main/java/com/example/newsweather/Listingscreen.kt
+--- a/app/src/main/java/com/example/newsweather/Listingscreen.kt	
++++ b/app/src/main/java/com/example/newsweather/Listingscreen.kt	
+@@ -1,13 +1,20 @@
+ package com.example.newsweather.screens
+ 
++import android.annotation.SuppressLint
++import android.content.pm.PackageManager
++import android.location.Geocoder
++import android.location.Location
+ import android.os.Bundle
+ import android.util.Log
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
+ import android.widget.SearchView
++import androidx.core.app.ActivityCompat
+ import androidx.databinding.DataBindingUtil
+ import androidx.fragment.app.Fragment
++import androidx.lifecycle.MutableLiveData
++import androidx.lifecycle.Observer
+ import androidx.lifecycle.ViewModelProvider
+ import androidx.navigation.fragment.findNavController
+ import androidx.recyclerview.widget.LinearLayoutManager
+@@ -17,13 +24,25 @@
+ import com.example.newsweather.databinding.FragmentListingscreenBinding
+ import com.example.newsweather.recycler.AdapterClass
+ import com.example.newsweather.recycler.NewsListingAdapterClass
+-import com.example.newsweather.viewmodels.NewsViewModel
+-import com.example.newsweather.viewmodels.NewsViewModelFactory
++import com.example.newsweather.viewmodels.newsviewmodel.NewsViewModel
++import com.example.newsweather.viewmodels.newsviewmodel.NewsViewModelFactory
++import com.example.newsweather.viewmodels.weatherviewmodel.WeatherViewModel
++import com.google.android.gms.location.FusedLocationProviderClient
++import com.google.android.gms.location.LocationServices
++import kotlinx.coroutines.CompletableDeferred
++import kotlinx.coroutines.delay
++import java.util.Locale
+ 
+ class Listingscreen : Fragment() {
+     private lateinit var listingRecyclerView: RecyclerView
+     private lateinit var categoryRecyclerView: RecyclerView
+     private lateinit var newsListingAdapter: NewsListingAdapterClass
++    private lateinit var fusedLocationClient: FusedLocationProviderClient
++    private val locationName = MutableLiveData<String>()
++    private lateinit var weatherViewModel: WeatherViewModel
++    private lateinit var newsViewModel: NewsViewModel
++    private lateinit var binding: FragmentListingscreenBinding
++
+ 
+     init {
+ 
+@@ -31,7 +50,9 @@
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         arguments?.let {
++
+         }
++        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+     }
+ 
+     override fun onCreateView(
+@@ -39,7 +60,7 @@
+         savedInstanceState: Bundle?
+     ): View? {
+         // Inflate the layout for this fragment
+-        val binding: FragmentListingscreenBinding = DataBindingUtil.inflate(
++        binding = DataBindingUtil.inflate(
+             inflater, R.layout.fragment_listingscreen, container, false
+         )
+ 
+@@ -47,18 +68,20 @@
+         val dataSource = NewsDatabase.getInstance(application).newsDatabaseDao
+ 
+         val newsViewModelFactory = NewsViewModelFactory(dataSource, application)
+-
+-        val newsViewModel = ViewModelProvider(this, newsViewModelFactory)
++        newsViewModel = ViewModelProvider(this, newsViewModelFactory)
+             .get(NewsViewModel::class.java)
++        weatherViewModel = WeatherViewModel()
++
+ 
+-        newsViewModel.getMyData()
++
++        newsViewModel.dbClear()
++        newsViewModel.apiRetrieveData()
+         newsViewModel.dbRetrieve()
+-
++        Log.i("Listingscreen", newsViewModel.allDataListFromRoom.value?.size.toString())
+ 
+ 
+ 
+-
+-
++//        recycler views
+         listingRecyclerView = binding.recyclerView
+         listingRecyclerView.layoutManager = LinearLayoutManager(this.requireContext())
+         listingRecyclerView.setHasFixedSize(true)
+@@ -77,7 +100,7 @@
+         listingRecyclerView.adapter = newsListingAdapter
+ 
+ 
+-
++//      observers
+         Log.e("listingscreen", newsViewModel.allDataListFromRoom.toString())
+         newsViewModel.allDataListFromRoom.observe(viewLifecycleOwner) { dataList ->
+             // Update the RecyclerView adapter with the new data list
+@@ -89,6 +112,21 @@
+             newsListingAdapter.addData(dataList)
+         }
+ 
++        weatherViewModel.temperature.observe(viewLifecycleOwner){data ->
++            binding.extendedFab.text = data.toString()
++        }
++
++//        locationName.observe(viewLifecycleOwner, Observer {
++//            getWeatherData(it)
++//        })
++
++
++        binding.extendedFab.setOnClickListener{
++            locationName.value?.let { it1 -> weatherViewModel.weatherGetMyData(it1.toString()) }
++        }
++
++
++        //pagination code
+         listingRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                 super.onScrolled(recyclerView, dx, dy)
+@@ -113,6 +151,8 @@
+             }
+         })
+ 
++
++        // search code
+         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+             override fun onQueryTextSubmit(query: String?): Boolean {
+                 // Perform search when user submits query (e.g., press search button)
+@@ -128,10 +168,87 @@
+                 return true
+             }
+         })
+-//        recyclerView.adapter = AdapterClass(newsViewModel.dataListFromRoom)
+-
+ 
+         return binding.root
+     }
+ 
++
++//    //location code
++//    override fun onStart() {
++//        super.onStart()
++////        newsViewModel.apiRetrieveData()
++//        checkLocationPermission()
++//    }
++//
++//    fun checkLocationPermission() {
++//        if (ActivityCompat.checkSelfPermission(
++//                requireContext(),
++//                android.Manifest.permission.ACCESS_FINE_LOCATION
++//            ) != PackageManager.PERMISSION_GRANTED
++//        ) {
++//            requestPermissions(
++//                arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),
++//                LOCATION_PERMISSION_REQUEST_CODE
++//            )
++//        } else {
++//            // Permission has already been granted
++//            fetchLocation()
++//        }
++//    }
++//
++//    override fun onRequestPermissionsResult(
++//        requestCode: Int,
++//        permissions: Array<out String>,
++//        grantResults: IntArray
++//    ) {
++//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
++//        if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
++//            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
++//                fetchLocation()
++//            } else {
++//                // Handle permission denied
++//            }
++//        }
++//    }
++//
++//    @SuppressLint("MissingPermission")
++//    private fun fetchLocation() {
++//        fusedLocationClient.lastLocation
++//            .addOnSuccessListener { location: Location? ->
++//                // Got last known location. In some rare situations this can be null.
++//                if (location != null) {
++//                    // Use the fetched location
++//                    val latitude = location.latitude
++//                    val longitude = location.longitude
++//                    // Do something with latitude and longitude
++//                    locationName.value = convertCoordinatesToLocation(latitude, longitude).split(",")[2]
++//                    Log.d("ListViewFragment -> location", "Location Name: ${locationName.value}")
++//                }
++//            }
++//            .addOnFailureListener { e ->
++//                // Handle failure
++//            }
++//    }
++//
++//    private fun convertCoordinatesToLocation(latitude: Double, longitude: Double): String {
++//        val geocoder = Geocoder(requireContext(), Locale.getDefault())
++//        val addresses = geocoder.getFromLocation(latitude, longitude, 1)
++//        val locationName = addresses?.get(0)?.getAddressLine(0)
++////        Toast.makeText(requireContext(), "Location Name: $locationName", Toast.LENGTH_LONG).show()
++//        Log.d("ListViewFragment -> location", "Location Name: $locationName")
++//        return locationName?:"Unknown"
++//    }
++//
++//    companion object {
++//        private const val LOCATION_PERMISSION_REQUEST_CODE = 1001
++//    }
++//
++//    private fun getWeatherData(location: String){
++//        weatherViewModel.weatherGetMyData(location)
++//        weatherViewModel.temperature.observe(viewLifecycleOwner, Observer {
++//            binding.extendedFab.text = it
++////            Toast.makeText(requireContext(), "Temperature: ${it.data.values.temperature}", Toast.LENGTH_SHORT).show()
++//        })
++//    }
++
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_listingscreen.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<layout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\">\n\n    <FrameLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        tools:context=\".Listingscreen\"\n        android:background=\"@color/my_primary\">\n\n        <!-- TODO: Update blank fragment layout -->\n        <androidx.constraintlayout.widget.ConstraintLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\">\n\n            <LinearLayout\n                android:id=\"@+id/linearLayout\"\n                android:layout_width=\"385dp\"\n                android:layout_height=\"128dp\"\n                android:orientation=\"horizontal\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toTopOf=\"parent\">\n\n                <SearchView\n                    android:id=\"@+id/searchView\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"match_parent\" />\n\n                <androidx.recyclerview.widget.RecyclerView\n                    android:id=\"@+id/recyclerViewCategory\"\n                    android:layout_width=\"wrap_content\"\n                    android:layout_height=\"wrap_content\"\n                    android:layout_marginEnd=\"1dp\" />\n            </LinearLayout>\n\n            <androidx.recyclerview.widget.RecyclerView\n                android:id=\"@+id/recyclerView\"\n                android:layout_width=\"0dp\"\n                android:layout_height=\"0dp\"\n                app:layout_constraintBottom_toBottomOf=\"parent\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintHorizontal_bias=\"0.0\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toBottomOf=\"@+id/linearLayout\" />\n\n        </androidx.constraintlayout.widget.ConstraintLayout>\n\n    </FrameLayout>\n</layout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_listingscreen.xml b/app/src/main/res/layout/fragment_listingscreen.xml
+--- a/app/src/main/res/layout/fragment_listingscreen.xml	
++++ b/app/src/main/res/layout/fragment_listingscreen.xml	
+@@ -14,6 +14,21 @@
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+ 
++            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
++                android:id="@+id/extended_fab"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_gravity="bottom|end"
++                android:layout_margin="16dp"
++                android:contentDescription="selva"
++                android:text="29 c"
++                app:layout_constraintBottom_toBottomOf="parent"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHorizontal_bias="0.883"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toTopOf="parent"
++                app:layout_constraintVertical_bias="0.874" />
++
+             <LinearLayout
+                 android:id="@+id/linearLayout"
+                 android:layout_width="385dp"
+@@ -43,7 +58,8 @@
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintHorizontal_bias="0.0"
+                 app:layout_constraintStart_toStartOf="parent"
+-                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
++                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
++                app:layout_constraintVertical_bias="0.0" />
+ 
+         </androidx.constraintlayout.widget.ConstraintLayout>
+ 

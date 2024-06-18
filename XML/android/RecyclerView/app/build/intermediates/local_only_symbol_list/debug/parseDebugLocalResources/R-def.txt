@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color lavender
+color white
+drawable army
+drawable college
+drawable eight
+drawable eleven
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable seventh
+id imageView
+id main
+id recylerView
+id textView_title
+layout activity_main
+layout item_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.RecyclerView
+style Theme.RecyclerView
+xml backup_rules
+xml data_extraction_rules

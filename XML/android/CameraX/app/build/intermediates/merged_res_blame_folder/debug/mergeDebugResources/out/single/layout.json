@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.camerax.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "com.example.camerax.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.camerax.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.camerax.app-main-39:/layout/activity_main.xml"
+    }
+]

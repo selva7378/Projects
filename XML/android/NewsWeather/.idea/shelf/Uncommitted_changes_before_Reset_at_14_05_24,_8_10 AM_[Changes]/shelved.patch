@@ -1,0 +1,383 @@
+Index: app/src/main/java/com/example/newsweather/api/news/NewsApiInterface.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.api.news\n\nimport retrofit2.Call\nimport retrofit2.http.GET\nimport retrofit2.http.Url\n\ninterface ApiInterface {\n//    @GET(\"/\")\n//    fun getData(@Query(\"fields\") fields: String): Call<NewsApi?>\n\n    @GET\n    fun getData(@Url url: String): Call<NewsApi?>\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/api/news/NewsApiInterface.kt b/app/src/main/java/com/example/newsweather/api/news/NewsApiInterface.kt
+--- a/app/src/main/java/com/example/newsweather/api/news/NewsApiInterface.kt	
++++ b/app/src/main/java/com/example/newsweather/api/news/NewsApiInterface.kt	
+@@ -4,7 +4,7 @@
+ import retrofit2.http.GET
+ import retrofit2.http.Url
+ 
+-interface ApiInterface {
++interface NewsApiInterface {
+ //    @GET("/")
+ //    fun getData(@Query("fields") fields: String): Call<NewsApi?>
+ 
+Index: app/src/main/java/com/example/newsweather/api/weather/Values.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.api.weather\n\ndata class Value(\n    val cloudBase: Double,\n    val cloudCeiling: Double,\n    val cloudCover: Int,\n    val dewPoint: Double,\n    val freezingRainIntensity: Int,\n    val humidity: Int,\n    val precipitationProbability: Int,\n    val pressureSurfaceLevel: Double,\n    val rainIntensity: Int,\n    val sleetIntensity: Int,\n    val snowIntensity: Int,\n    val temperature: Double,\n    val temperatureApparent: Double,\n    val uvHealthConcern: Int,\n    val uvIndex: Int,\n    val visibility: Int,\n    val weatherCode: Int,\n    val windDirection: Double,\n    val windGust: Double,\n    val windSpeed: Double\n)
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/api/weather/Values.kt b/app/src/main/java/com/example/newsweather/api/weather/Values.kt
+--- a/app/src/main/java/com/example/newsweather/api/weather/Values.kt	
++++ b/app/src/main/java/com/example/newsweather/api/weather/Values.kt	
+@@ -1,6 +1,6 @@
+ package com.example.newsweather.api.weather
+ 
+-data class Value(
++data class Values(
+     val cloudBase: Double,
+     val cloudCeiling: Double,
+     val cloudCover: Int,
+@@ -9,14 +9,14 @@
+     val humidity: Int,
+     val precipitationProbability: Int,
+     val pressureSurfaceLevel: Double,
+-    val rainIntensity: Int,
++    val rainIntensity: Double,
+     val sleetIntensity: Int,
+     val snowIntensity: Int,
+     val temperature: Double,
+     val temperatureApparent: Double,
+     val uvHealthConcern: Int,
+     val uvIndex: Int,
+-    val visibility: Int,
++    val visibility: Double,
+     val weatherCode: Int,
+     val windDirection: Double,
+     val windGust: Double,
+Index: app/src/main/java/com/example/newsweather/api/weather/WeatherApiInterface.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.api.weather\n\ninterface WeatherApiInterface {\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/api/weather/WeatherApiInterface.kt b/app/src/main/java/com/example/newsweather/api/weather/WeatherApiInterface.kt
+--- a/app/src/main/java/com/example/newsweather/api/weather/WeatherApiInterface.kt	
++++ b/app/src/main/java/com/example/newsweather/api/weather/WeatherApiInterface.kt	
+@@ -1,4 +1,15 @@
+ package com.example.newsweather.api.weather
+ 
++import com.example.newsweather.api.news.NewsApi
++import retrofit2.Call
++import retrofit2.http.GET
++import retrofit2.http.Query
++import retrofit2.http.Url
++
+ interface WeatherApiInterface {
++    @GET
++    fun getData(@Url url: String): Call<Weather?>
++
++    @GET("weather/realtime")
++    fun getWeather(@Query("location") location: String, @Query("apikey") apiKey: String) : Call<Weather?>
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/newsweather/viewmodels/weatherviewmodel/WeatherViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.viewmodels.weatherviewmodel\n\nclass WeatherViewModel {\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/viewmodels/weatherviewmodel/WeatherViewModel.kt b/app/src/main/java/com/example/newsweather/viewmodels/weatherviewmodel/WeatherViewModel.kt
+--- a/app/src/main/java/com/example/newsweather/viewmodels/weatherviewmodel/WeatherViewModel.kt	
++++ b/app/src/main/java/com/example/newsweather/viewmodels/weatherviewmodel/WeatherViewModel.kt	
+@@ -1,4 +1,56 @@
+ package com.example.newsweather.viewmodels.weatherviewmodel
+ 
+-class WeatherViewModel {
++import android.util.Log
++import androidx.lifecycle.LiveData
++import androidx.lifecycle.MutableLiveData
++import androidx.lifecycle.ViewModel
++import com.example.newsweather.api.weather.Weather
++import com.example.newsweather.api.weather.WeatherApiInterface
++import kotlinx.coroutines.CompletableDeferred
++import retrofit2.Call
++import retrofit2.Callback
++import retrofit2.Response
++import retrofit2.Retrofit
++import retrofit2.converter.gson.GsonConverterFactory
++
++class WeatherViewModel: ViewModel() {
++//    private val _weatherResult = MutableLiveData<String>()
++//    val weatherResult: LiveData<String>
++//        get() = _weatherResult
++
++
++    private val _temperature = MutableLiveData<String?>()
++    val temperature: LiveData<String?>
++        get() = _temperature
++
++
++    fun weatherGetMyData(location: String){
++        val retrofitBuilder = Retrofit.Builder()
++            .addConverterFactory(GsonConverterFactory.create())
++            .baseUrl("https://api.tomorrow.io/v4/")
++            .build()
++            .create(WeatherApiInterface::class.java)
++
++        val retrofitData = retrofitBuilder.getWeather("madurai", "83ASz9eG4Mblxzt2MkhmocPAvHe3wzD3")
++
++//        val retrofitData = retrofitBuilder.getData("realtime?location=madurai&apikey=83ASz9eG4Mblxzt2MkhmocPAvHe3wzD3")
++
++
++        retrofitData.enqueue(object : Callback<Weather?> {
++            override fun onResponse(
++                p0: Call<Weather?>,
++                p1: Response<Weather?>
++            ) {
++                val responseBody = p1?.body()!!
++                Log.i("weatherviewmodel", responseBody.data.values.temperature.toString())
++
++                _temperature.value = responseBody.data.values.temperature.toString()
++            }
++            override fun onFailure(p0: Call<Weather?>, p1: Throwable) {
++                Log.d("weatherviewmodel","on Failure"+ p1.message)
++            }
++        })
++    }
++
++
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/newsweather/api/news/Data.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.api\n\ndata class Data(\n    val author: String,\n    val content: String,\n    val date: String,\n    val id: String,\n    val imageUrl: String,\n    val readMoreUrl: String,\n    val time: String,\n    val title: String,\n    val url: String\n)
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/api/news/Data.kt b/app/src/main/java/com/example/newsweather/api/news/Data.kt
+--- a/app/src/main/java/com/example/newsweather/api/news/Data.kt	
++++ b/app/src/main/java/com/example/newsweather/api/news/Data.kt	
+@@ -1,4 +1,4 @@
+-package com.example.newsweather.api
++package com.example.newsweather.api.news
+ 
+ data class Data(
+     val author: String,
+Index: app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.viewmodels\n\nimport android.app.Application\nimport android.util.Log\nimport androidx.lifecycle.AndroidViewModel\nimport androidx.lifecycle.LiveData\nimport androidx.lifecycle.MutableLiveData\nimport com.example.newsweather.api.news.NewsApiInterface\nimport com.example.newsweather.api.news.NewsApi\nimport com.example.newsweather.api.weather.Weather\nimport com.example.newsweather.api.weather.WeatherApiInterface\nimport com.example.newsweather.database.roomdb.News\nimport com.example.newsweather.database.roomdb.NewsDatabaseDao\nimport kotlinx.coroutines.CoroutineScope\nimport kotlinx.coroutines.Dispatchers\nimport kotlinx.coroutines.Job\nimport kotlinx.coroutines.launch\nimport kotlinx.coroutines.withContext\nimport retrofit2.Call\nimport retrofit2.Callback\nimport retrofit2.Response\nimport retrofit2.Retrofit\nimport retrofit2.converter.gson.GsonConverterFactory\n\nclass NewsViewModel(val database: NewsDatabaseDao,\n                    application: Application) : AndroidViewModel(application) {\n    private val _allDataListFromRoom = MutableLiveData<List<News?>>().apply { value = emptyList() }\n    val allDataListFromRoom: LiveData<List<News?>>\n        get() = _allDataListFromRoom\n    private val _temperature = MutableLiveData<Double?>()\n    val temperature: LiveData<Double?>\n        get() = _temperature\n    val _categoryDataListFromRoom = MutableLiveData<List<News?>>()\n    var category: String = \"all\"\n    var currentPage = 0\n    private val pageSize = 4 // Number of items per page\n    var searchFlag: Boolean = false;\n\n\n\n    private var viewModelJob = Job()\n    private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)\n\n\n    fun newsGetMyData(){\n        val retrofitBuilder = Retrofit.Builder()\n            .addConverterFactory(GsonConverterFactory.create())\n            .baseUrl(\"https://inshortsapi.vercel.app/\")\n            .build()\n            .create(NewsApiInterface::class.java)\n\n        val apiCatagoryList: ArrayList<String> = arrayListOf(\"news?category=national\", \"news?category=business\",\n            \"news?category=sports\", \"news?category=world\",\n            \"news?category=politics\", \"news?category=technology\", \"news?category=startup\", \"news?category=entertainment\",\n            \"news?category=miscellaneous\", \"news?category=hatke\", \"news?category=science\", \"news?category=automobile\")\n//        val apiCatagoryList: ArrayList<String> = arrayListOf(\"news?category=technology\"\n//        )\n\n\n        for (newsCatogory in apiCatagoryList){\n            val retrofitData = retrofitBuilder.getData(newsCatogory)\n\n            retrofitData.enqueue(object : Callback<NewsApi?> {\n                override fun onResponse(\n                    p0: Call<NewsApi?>,\n                    p1: Response<NewsApi?>\n                ) {\n//                    Log.e(\"main activity\", newsCatogory)\n                    val responseBody = p1?.body()!!\n                    for (data in responseBody.data){\n                        dbInsert(responseBody.category, data.author, data.content,\n                            data.date, data.id, data.imageUrl, data.readMoreUrl,\n                            data.time, data.title, data.url, responseBody.success)\n                    }\n                }\n\n                override fun onFailure(p0: Call<NewsApi?>, p1: Throwable) {\n                    Log.d(\"MainActivity\",\"on Failure\"+ p1.message)\n                }\n            })\n        }\n    }\n\n    fun weatherGetMyData(){\n        val retrofitBuilder = Retrofit.Builder()\n            .addConverterFactory(GsonConverterFactory.create())\n            .baseUrl(\"https://api.tomorrow.io/v4/weather/\")\n            .build()\n            .create(WeatherApiInterface::class.java)\n\n\n        val retrofitData = retrofitBuilder.getData(\"realtime?location=madurai&apikey=83ASz9eG4Mblxzt2MkhmocPAvHe3wzD3\")\n\n\n        retrofitData.enqueue(object : Callback<Weather?> {\n            override fun onResponse(\n                p0: Call<Weather?>,\n                p1: Response<Weather?>\n            ) {\n                val responseBody = p1?.body()!!\n                _temperature.value = responseBody.data.values.temperature!!\n            }\n            override fun onFailure(p0: Call<Weather?>, p1: Throwable) {\n                Log.d(\"MainActivity\",\"on Failure\"+ p1.message)\n            }\n        })\n    }\n\n\n    fun dbInsert(category: String, author: String, content: String,\n                 date: String,id: String, imageUrl: String,\n                 readMoreUrl: String,time: String,title: String,\n                 url: String,success: String){\n        uiScope.launch {\n            val news = News(category = category, author = author, content = content,\n                date = date, id = id, imageUrl = imageUrl, readMoreUrl = readMoreUrl,\n                time = time, title = title, url = url, success = success)\n            insert(news)\n        }\n    }\n\n    private suspend fun insert(news: News){\n        return withContext(Dispatchers.IO){\n            database.insert(news)\n        }\n    }\n\n    fun dbRetrieve(){\n        uiScope.launch {\n            get()\n        }\n    }\n\n    private suspend fun get(){\n        return withContext(Dispatchers.IO){\n//            delay(1000)\n\n\n            _allDataListFromRoom.postValue(database.getAll(pageSize, currentPage * pageSize))\n//            _allDataListFromRoom.postValue(database.getAll())\n            currentPage++\n            Log.i(\"newviewmodel\", \"get all is running\")\n        }\n    }\n\n    fun dbRetrieveCategory(category: String, whereToAdd: String){\n        uiScope.launch {\n            getByCategory(category, whereToAdd)\n        }\n    }\n\n    private suspend fun getByCategory(category: String, whereToAdd: String){\n        return withContext(Dispatchers.IO){\n            if(whereToAdd == \"allData\"){\n                _allDataListFromRoom.postValue(database.getAllByCategory(category,pageSize, currentPage * pageSize ))\n            }else{\n                if(category == \"all\"){\n                    _categoryDataListFromRoom.postValue(database.getAll())\n                }else{\n                    _categoryDataListFromRoom.postValue(database.getAllByCategory(category,pageSize, currentPage * pageSize ))\n                }\n            }\n            currentPage++\n            Log.i(\"newviewmodel\", \"getbycategory is running\")\n        }\n    }\n\n    fun dbRetrieveBySearch(query: String?, flag: String){\n        uiScope.launch {\n            search(query, flag)\n        }\n    }\n\n\n    private suspend fun search(query: String?, flag: String){\n        return withContext(Dispatchers.IO){\n            if(flag == \"scrollview\"){\n                _allDataListFromRoom.postValue(database.search(query, pageSize, currentPage * pageSize))\n            }else{\n                _categoryDataListFromRoom.postValue(database.search(query, pageSize, currentPage * pageSize))\n            }\n        }\n    }\n\n\n    override fun onCleared() {\n        super.onCleared()\n        viewModelJob.cancel()\n        database.clear()\n    }\n\n}\n\n\n
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModel.kt b/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModel.kt
+--- a/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModel.kt	
++++ b/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModel.kt	
+@@ -1,4 +1,4 @@
+-package com.example.newsweather.viewmodels
++package com.example.newsweather.viewmodels.newsviewmodel
+ 
+ import android.app.Application
+ import android.util.Log
+@@ -11,9 +11,11 @@
+ import com.example.newsweather.api.weather.WeatherApiInterface
+ import com.example.newsweather.database.roomdb.News
+ import com.example.newsweather.database.roomdb.NewsDatabaseDao
++import kotlinx.coroutines.CompletableDeferred
+ import kotlinx.coroutines.CoroutineScope
+ import kotlinx.coroutines.Dispatchers
+ import kotlinx.coroutines.Job
++import kotlinx.coroutines.async
+ import kotlinx.coroutines.launch
+ import kotlinx.coroutines.withContext
+ import retrofit2.Call
+@@ -21,15 +23,15 @@
+ import retrofit2.Response
+ import retrofit2.Retrofit
+ import retrofit2.converter.gson.GsonConverterFactory
++import kotlin.jvm.Throws
+ 
+ class NewsViewModel(val database: NewsDatabaseDao,
+                     application: Application) : AndroidViewModel(application) {
++    val fetchingDeffered = CompletableDeferred<Unit>()
+     private val _allDataListFromRoom = MutableLiveData<List<News?>>().apply { value = emptyList() }
+     val allDataListFromRoom: LiveData<List<News?>>
+         get() = _allDataListFromRoom
+-    private val _temperature = MutableLiveData<Double?>()
+-    val temperature: LiveData<Double?>
+-        get() = _temperature
++
+     val _categoryDataListFromRoom = MutableLiveData<List<News?>>()
+     var category: String = "all"
+     var currentPage = 0
+@@ -42,69 +44,63 @@
+     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
+ 
+ 
+-    fun newsGetMyData(){
+-        val retrofitBuilder = Retrofit.Builder()
+-            .addConverterFactory(GsonConverterFactory.create())
+-            .baseUrl("https://inshortsapi.vercel.app/")
+-            .build()
+-            .create(NewsApiInterface::class.java)
++
++    fun apiRetrieveData(){
++            newsGetMyData()
++    }
++//    fun fetchDataAndInsertIntoDb() {
++//        synchronized(this){
++//            uiScope.launch {
++//                // Start fetching data from API
++//            val job = async { newsGetMyData() }
++//                dbClear()
++//                newsGetMyData()
++//                // Wait for API fetching to complete
++//                job.await()
++//                // Once API fetching is done, retrieve data from database
++////                dbRetrieve()
++//            }
++//        }
++//    }
++    private fun newsGetMyData(){
++            val retrofitBuilder = Retrofit.Builder()
++                .addConverterFactory(GsonConverterFactory.create())
++                .baseUrl("https://inshortsapi.vercel.app/")
++                .build()
++                .create(NewsApiInterface::class.java)
+ 
+-        val apiCatagoryList: ArrayList<String> = arrayListOf("news?category=national", "news?category=business",
+-            "news?category=sports", "news?category=world",
+-            "news?category=politics", "news?category=technology", "news?category=startup", "news?category=entertainment",
+-            "news?category=miscellaneous", "news?category=hatke", "news?category=science", "news?category=automobile")
++            val apiCatagoryList: ArrayList<String> = arrayListOf("news?category=national", "news?category=business",
++                "news?category=sports", "news?category=world",
++                "news?category=politics", "news?category=technology", "news?category=startup", "news?category=entertainment",
++                "news?category=miscellaneous", "news?category=hatke", "news?category=science", "news?category=automobile")
+ //        val apiCatagoryList: ArrayList<String> = arrayListOf("news?category=technology"
+ //        )
+ 
+ 
+-        for (newsCatogory in apiCatagoryList){
+-            val retrofitData = retrofitBuilder.getData(newsCatogory)
++            for (newsCatogory in apiCatagoryList){
++                val retrofitData = retrofitBuilder.getData(newsCatogory)
+ 
+-            retrofitData.enqueue(object : Callback<NewsApi?> {
+-                override fun onResponse(
+-                    p0: Call<NewsApi?>,
+-                    p1: Response<NewsApi?>
+-                ) {
+-//                    Log.e("main activity", newsCatogory)
+-                    val responseBody = p1?.body()!!
+-                    for (data in responseBody.data){
+-                        dbInsert(responseBody.category, data.author, data.content,
+-                            data.date, data.id, data.imageUrl, data.readMoreUrl,
+-                            data.time, data.title, data.url, responseBody.success)
+-                    }
+-                }
++                retrofitData.enqueue(object : Callback<NewsApi?> {
++                    override fun onResponse(
++                        p0: Call<NewsApi?>,
++                        p1: Response<NewsApi?>
++                    ) {
++                        val responseBody = p1?.body()!!
++                        for (data in responseBody.data){
++                            dbInsert(responseBody.category, data.author, data.content,
++                                data.date, data.id, data.imageUrl, data.readMoreUrl,
++                                data.time, data.title, data.url, responseBody.success)
++                        }
++                        Log.i("newviewmodel", "news view model log")
++                    }
+ 
+-                override fun onFailure(p0: Call<NewsApi?>, p1: Throwable) {
+-                    Log.d("MainActivity","on Failure"+ p1.message)
+-                }
+-            })
+-        }
+-    }
+-
+-    fun weatherGetMyData(){
+-        val retrofitBuilder = Retrofit.Builder()
+-            .addConverterFactory(GsonConverterFactory.create())
+-            .baseUrl("https://api.tomorrow.io/v4/weather/")
+-            .build()
+-            .create(WeatherApiInterface::class.java)
+-
+-
+-        val retrofitData = retrofitBuilder.getData("realtime?location=madurai&apikey=83ASz9eG4Mblxzt2MkhmocPAvHe3wzD3")
+-
+-
+-        retrofitData.enqueue(object : Callback<Weather?> {
+-            override fun onResponse(
+-                p0: Call<Weather?>,
+-                p1: Response<Weather?>
+-            ) {
+-                val responseBody = p1?.body()!!
+-                _temperature.value = responseBody.data.values.temperature!!
+-            }
+-            override fun onFailure(p0: Call<Weather?>, p1: Throwable) {
+-                Log.d("MainActivity","on Failure"+ p1.message)
+-            }
+-        })
++                    override fun onFailure(p0: Call<NewsApi?>, p1: Throwable) {
++                        Log.d("MainActivity","on Failure"+ p1.message)
++                    }
++                })
++            }
+     }
++
+ 
+ 
+     fun dbInsert(category: String, author: String, content: String,
+@@ -134,8 +130,7 @@
+     private suspend fun get(){
+         return withContext(Dispatchers.IO){
+ //            delay(1000)
+-
+-
++//            fetchingDeffered.await()
+             _allDataListFromRoom.postValue(database.getAll(pageSize, currentPage * pageSize))
+ //            _allDataListFromRoom.postValue(database.getAll())
+             currentPage++
+@@ -182,11 +177,23 @@
+         }
+     }
+ 
++    fun dbClear(){
++        uiScope.launch {
++            clear()
++        }
++    }
++
++
++    private suspend fun clear(){
++        return withContext(Dispatchers.IO){
++            database.clear()
++        }
++    }
++
+ 
+     override fun onCleared() {
+         super.onCleared()
+         viewModelJob.cancel()
+-        database.clear()
+     }
+ 
+ }
+Index: app/src/main/java/com/example/newsweather/api/news/NewsApi.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.api\n\ndata class NewsApi(\n    val category: String,\n    val `data`: List<Data>,\n    val success: String\n)
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/api/news/NewsApi.kt b/app/src/main/java/com/example/newsweather/api/news/NewsApi.kt
+--- a/app/src/main/java/com/example/newsweather/api/news/NewsApi.kt	
++++ b/app/src/main/java/com/example/newsweather/api/news/NewsApi.kt	
+@@ -1,4 +1,4 @@
+-package com.example.newsweather.api
++package com.example.newsweather.api.news
+ 
+ data class NewsApi(
+     val category: String,
+Index: app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModelFactory.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.newsweather.viewmodels\n\nimport android.app.Application\nimport androidx.lifecycle.ViewModel\nimport androidx.lifecycle.ViewModelProvider\nimport com.example.newsweather.database.roomdb.NewsDatabaseDao\n\nclass NewsViewModelFactory(private val dataSource: NewsDatabaseDao,\n                           private val application: Application\n) : ViewModelProvider.Factory {\n    @Suppress(\"unchecked cast\")\n    override fun <T : ViewModel> create(modelClass: Class<T>): T {\n        if (modelClass.isAssignableFrom(NewsViewModel::class.java)) {\n            return NewsViewModel(dataSource, application) as? T // Use safe cast operator as?\n                ?: throw IllegalArgumentException(\"Unknown ViewModel class\")\n        }\n        throw IllegalArgumentException(\"Unknown ViewModel class\")\n    }\n\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModelFactory.kt b/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModelFactory.kt
+--- a/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModelFactory.kt	
++++ b/app/src/main/java/com/example/newsweather/viewmodels/newsviewmodel/NewsViewModelFactory.kt	
+@@ -1,4 +1,4 @@
+-package com.example.newsweather.viewmodels
++package com.example.newsweather.viewmodels.newsviewmodel
+ 
+ import android.app.Application
+ import androidx.lifecycle.ViewModel

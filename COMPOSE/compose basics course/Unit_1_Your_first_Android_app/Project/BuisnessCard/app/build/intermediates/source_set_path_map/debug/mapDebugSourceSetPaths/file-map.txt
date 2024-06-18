@@ -1,0 +1,46 @@
+com.example.businesscard.app-ui-test-manifest-1.5.0-0 /Users/selvaganesh/.gradle/caches/transforms-4/06a10dfaab224997ca400231d2f4a001/transformed/ui-test-manifest-1.5.0/res
+com.example.businesscard.app-foundation-release-1 /Users/selvaganesh/.gradle/caches/transforms-4/0ecbf75bda7f6faaece8c00857ef1275/transformed/foundation-release/res
+com.example.businesscard.app-lifecycle-viewmodel-release-2 /Users/selvaganesh/.gradle/caches/transforms-4/137c9c8c5d24bcd1177cf0027913e142/transformed/lifecycle-viewmodel-release/res
+com.example.businesscard.app-foundation-layout-release-3 /Users/selvaganesh/.gradle/caches/transforms-4/1417c93f65dd058a75b1ec3ba35bed0c/transformed/foundation-layout-release/res
+com.example.businesscard.app-customview-poolingcontainer-1.0.0-4 /Users/selvaganesh/.gradle/caches/transforms-4/15182f181e10875796d851f308fd06a1/transformed/customview-poolingcontainer-1.0.0/res
+com.example.businesscard.app-lifecycle-runtime-release-5 /Users/selvaganesh/.gradle/caches/transforms-4/1e3ac2fc742041881afb499e608f1d1f/transformed/lifecycle-runtime-release/res
+com.example.businesscard.app-ui-graphics-release-6 /Users/selvaganesh/.gradle/caches/transforms-4/22f81ceb07db6d6ff16baf9463314fa7/transformed/ui-graphics-release/res
+com.example.businesscard.app-animation-core-release-7 /Users/selvaganesh/.gradle/caches/transforms-4/2987223cc01fe4e7f1fe9f861e38dac8/transformed/animation-core-release/res
+com.example.businesscard.app-ui-util-release-8 /Users/selvaganesh/.gradle/caches/transforms-4/2d4028b666d3a68535569fda8946e83f/transformed/ui-util-release/res
+com.example.businesscard.app-ui-geometry-release-9 /Users/selvaganesh/.gradle/caches/transforms-4/2d7b883ed361cea34232b6318eb7b707/transformed/ui-geometry-release/res
+com.example.businesscard.app-activity-compose-1.9.0-10 /Users/selvaganesh/.gradle/caches/transforms-4/355e60ba20c049ea890be4df3d5151d5/transformed/activity-compose-1.9.0/res
+com.example.businesscard.app-core-runtime-2.2.0-11 /Users/selvaganesh/.gradle/caches/transforms-4/37f35244e743194f7c468144f25d8192/transformed/core-runtime-2.2.0/res
+com.example.businesscard.app-ui-tooling-preview-release-12 /Users/selvaganesh/.gradle/caches/transforms-4/3a63f5ff0ccdb7d5d197fd5bdd673346/transformed/ui-tooling-preview-release/res
+com.example.businesscard.app-material-release-13 /Users/selvaganesh/.gradle/caches/transforms-4/3b7a2e453c306de63cd46d278777effd/transformed/material-release/res
+com.example.businesscard.app-material-icons-core-release-14 /Users/selvaganesh/.gradle/caches/transforms-4/3fe9da4437d9ca0c2929d799b7355f44/transformed/material-icons-core-release/res
+com.example.businesscard.app-animation-release-15 /Users/selvaganesh/.gradle/caches/transforms-4/48c146b392600da3f16494b09ff9aaf9/transformed/animation-release/res
+com.example.businesscard.app-lifecycle-runtime-ktx-release-16 /Users/selvaganesh/.gradle/caches/transforms-4/583c6947cc87d4134594deba9c896359/transformed/lifecycle-runtime-ktx-release/res
+com.example.businesscard.app-core-1.13.1-17 /Users/selvaganesh/.gradle/caches/transforms-4/586e550422b6e33dbfd0b575c8ba5703/transformed/core-1.13.1/res
+com.example.businesscard.app-ui-tooling-data-release-18 /Users/selvaganesh/.gradle/caches/transforms-4/5aaa4ed45ac658bc910fb0aad51170bc/transformed/ui-tooling-data-release/res
+com.example.businesscard.app-startup-runtime-1.1.1-19 /Users/selvaganesh/.gradle/caches/transforms-4/636b6bdf07b990a3b7cb5ab651b6d431/transformed/startup-runtime-1.1.1/res
+com.example.businesscard.app-ui-tooling-release-20 /Users/selvaganesh/.gradle/caches/transforms-4/6ca38021684ea55e104ad9771b4d8d52/transformed/ui-tooling-release/res
+com.example.businesscard.app-savedstate-1.2.1-21 /Users/selvaganesh/.gradle/caches/transforms-4/743805b88c5f01dd2548109f2e770d75/transformed/savedstate-1.2.1/res
+com.example.businesscard.app-activity-ktx-1.9.0-22 /Users/selvaganesh/.gradle/caches/transforms-4/7dece19d1df3f3a8c12befdb3501c817/transformed/activity-ktx-1.9.0/res
+com.example.businesscard.app-runtime-release-23 /Users/selvaganesh/.gradle/caches/transforms-4/86de82253d90a2d63f96aee2be7e6dbc/transformed/runtime-release/res
+com.example.businesscard.app-runtime-saveable-release-24 /Users/selvaganesh/.gradle/caches/transforms-4/88512554a0951cb57bd248f71c2500b5/transformed/runtime-saveable-release/res
+com.example.businesscard.app-activity-1.9.0-25 /Users/selvaganesh/.gradle/caches/transforms-4/91a085c61fcb6cfd228483d55a1ac9f4/transformed/activity-1.9.0/res
+com.example.businesscard.app-core-ktx-1.13.1-26 /Users/selvaganesh/.gradle/caches/transforms-4/91a4305c98b9b2c64b9f3c690a6979a9/transformed/core-ktx-1.13.1/res
+com.example.businesscard.app-annotation-experimental-1.4.0-27 /Users/selvaganesh/.gradle/caches/transforms-4/9d4aad19e06934b8abf4443afc9c50d1/transformed/annotation-experimental-1.4.0/res
+com.example.businesscard.app-savedstate-ktx-1.2.1-28 /Users/selvaganesh/.gradle/caches/transforms-4/9ef38d688d078b3dafb198adfbff9f6d/transformed/savedstate-ktx-1.2.1/res
+com.example.businesscard.app-lifecycle-viewmodel-ktx-2.8.1-29 /Users/selvaganesh/.gradle/caches/transforms-4/9f36b5eedf398d0c92060a9814efeb8c/transformed/lifecycle-viewmodel-ktx-2.8.1/res
+com.example.businesscard.app-lifecycle-livedata-core-2.8.1-30 /Users/selvaganesh/.gradle/caches/transforms-4/a0b04d93dbd0f4d4fe9792dd02482444/transformed/lifecycle-livedata-core-2.8.1/res
+com.example.businesscard.app-emoji2-1.4.0-31 /Users/selvaganesh/.gradle/caches/transforms-4/a9893c47c6ff7b9863e7499da1a254db/transformed/emoji2-1.4.0/res
+com.example.businesscard.app-material-ripple-release-32 /Users/selvaganesh/.gradle/caches/transforms-4/aa7120c6067d51186f7ed9e08e83745a/transformed/material-ripple-release/res
+com.example.businesscard.app-material3-1.1.1-33 /Users/selvaganesh/.gradle/caches/transforms-4/b15866c15dd56117ad62253b690cba15/transformed/material3-1.1.1/res
+com.example.businesscard.app-ui-unit-release-34 /Users/selvaganesh/.gradle/caches/transforms-4/b6832fd06cd14330b96be7c64e24f725/transformed/ui-unit-release/res
+com.example.businesscard.app-ui-text-release-35 /Users/selvaganesh/.gradle/caches/transforms-4/b8096629ed210830d28ace2be91104de/transformed/ui-text-release/res
+com.example.businesscard.app-ui-release-36 /Users/selvaganesh/.gradle/caches/transforms-4/cbf8e4c9a975dc454a55d01dca992a5c/transformed/ui-release/res
+com.example.businesscard.app-lifecycle-viewmodel-savedstate-2.8.1-37 /Users/selvaganesh/.gradle/caches/transforms-4/d57a2be3bae93c8dbcb4a266d3001fbc/transformed/lifecycle-viewmodel-savedstate-2.8.1/res
+com.example.businesscard.app-lifecycle-process-2.8.1-38 /Users/selvaganesh/.gradle/caches/transforms-4/d5cc414e0253c2eb6534e01f2eb242d2/transformed/lifecycle-process-2.8.1/res
+com.example.businesscard.app-profileinstaller-1.3.1-39 /Users/selvaganesh/.gradle/caches/transforms-4/f777c8cd3c4986f4091ad8486f1dea5e/transformed/profileinstaller-1.3.1/res
+com.example.businesscard.app-resValues-40 /Users/selvaganesh/Downloads/zoho/Android/COMPOSE/compose basics course/Unit_1_Your_first_Android_app/Project/BuisnessCard/app/build/generated/res/resValues/debug
+com.example.businesscard.app-packageDebugResources-41 /Users/selvaganesh/Downloads/zoho/Android/COMPOSE/compose basics course/Unit_1_Your_first_Android_app/Project/BuisnessCard/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.businesscard.app-packageDebugResources-42 /Users/selvaganesh/Downloads/zoho/Android/COMPOSE/compose basics course/Unit_1_Your_first_Android_app/Project/BuisnessCard/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.businesscard.app-debug-43 /Users/selvaganesh/Downloads/zoho/Android/COMPOSE/compose basics course/Unit_1_Your_first_Android_app/Project/BuisnessCard/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.example.businesscard.app-debug-44 /Users/selvaganesh/Downloads/zoho/Android/COMPOSE/compose basics course/Unit_1_Your_first_Android_app/Project/BuisnessCard/app/src/debug/res
+com.example.businesscard.app-main-45 /Users/selvaganesh/Downloads/zoho/Android/COMPOSE/compose basics course/Unit_1_Your_first_Android_app/Project/BuisnessCard/app/src/main/res

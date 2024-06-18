@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.news.app-mergeDebugResources-57:/layout/fragment_news_listing_screen.xml",
+        "source": "com.example.news.app-main-60:/layout/fragment_news_listing_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-mergeDebugResources-57:/layout/activity_main.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-mergeDebugResources-57:/layout/activity_splash_screen.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-mergeDebugResources-57:/layout/fragment_news_listing_screen.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/fragment_news_listing_screen.xml"
+    },
+    {
+        "merged": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-mergeDebugResources-57:/layout/fragment_web_view_screen.xml",
+        "source": "/Users/selvaganesh/.gradle/daemon/8.6/com.example.news.app-main-60:/layout/fragment_web_view_screen.xml"
+    }
+]
